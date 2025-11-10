@@ -1,0 +1,21 @@
+{
+  "name": "immutable-playground",
+  "version": "1.0.0",
+  "description": "Immutable Practice Goals",
+  "main": "basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliyasyeddd/immutable-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aliyasyeddd/immutable-playground/issues"
+  },
+  "homepage": "https://github.com/aliyasyeddd/immutable-playground#readme"
+}
