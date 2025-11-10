@@ -8,9 +8,20 @@ let obj = {
     email: "mahaboobaliya02@gmail.com"
 }
 
+
+
 //step 3 Convert the object into an Immutable Map.
 const immutableUser = Map(obj)
+//Convert Immutable → plain JS before saving to localStorage
+const plainUser = immutableUser.toJS()
+console.log(plainUser)
 
+// Save to localStorage
+localStorage.setItem('user', JSON.stringify(plainUser));
+
+// Retrieve and inspect
+const retrieved = JSON.parse(localStorage.getItem('user'));
+console.log('Retrieved from localStorage:', retrieved);
 
 //step 4 Try accessing a field using .get("name").
 console.log("Name (Immutable):", immutableUser.get("name"));

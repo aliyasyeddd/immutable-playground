@@ -1,4 +1,6 @@
 import { List, Map } from "immutable"
+//List → For sequences, arrays, queues
+//Map → For user profiles, config, objects with unique keys
 
 const names = ["ramsha", "nisha", "alina" ];
 

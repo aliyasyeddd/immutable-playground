@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/4.3.0/immutable.min.js"></script>
+    <script>
+      const { Map, List } = Immutable;
+
+      const userMap = Map({
+        name: 'Aliya',
+        id: 225,
+        email: 'newmail@gmail.com'
+      });
+
+      const plainUser = userMap.toJS();
+
+      localStorage.setItem('user', JSON.stringify(plainUser));
+      console.log('Retrieved from localStorage:', JSON.parse(localStorage.getItem('user')));
+    </script>
+  </body>
+</html>
